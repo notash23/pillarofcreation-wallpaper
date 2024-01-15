@@ -1,0 +1,22 @@
+{
+  "name": "wallpaper",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "terser": "^5.26.0",
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "@pixi/filter-advanced-bloom": "^5.1.1",
+    "@pixi/filter-motion-blur": "^5.1.1",
+    "@pixi/filter-shockwave": "^5.1.1",
+    "pixi.js": "^7.3.3"
+  }
+}
