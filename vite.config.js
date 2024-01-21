@@ -2,6 +2,14 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
     build: {
-        minify: 'none',
-    }
+        minify: 'terser',
+        terserOptions: {
+            mangle: {
+                reserved: ["livelyAudioListener", "livelyPropertyListener"]
+            },
+            compress: {
+                keep_fnames: /^.*/,
+            },
+        },
+    },
 })
